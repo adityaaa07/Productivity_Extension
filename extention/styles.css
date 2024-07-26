@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 30px 0; /* Increased padding for a larger header */
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em; /* Larger font size for the main title */
+}
+
+main {
+  padding: 30px; /* Increased padding for more space around content */
+}
+
+section {
+  margin-bottom: 30px; /* Increased margin for more spacing between sections */
+  padding: 25px; /* Increased padding inside sections */
+  border-radius: 10px; /* Larger border radius for a more rounded appearance */
+  background-color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Larger shadow for more emphasis */
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2em; /* Larger font size for section titles */
+  color: #333;
+}
+
+button {
+  padding: 15px 25px; /* Larger button padding for a more substantial click area */
+  font-size: 18px; /* Larger font size for better readability */
+  border: none;
+  border-radius: 6px; /* Slightly larger border radius for buttons */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+#timer {
+  font-size: 4em; /* Larger font size for the timer */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  background-color: #eee;
+  border-radius: 6px; /* Larger border radius for the marquee container */
+}
+
+.marquee {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 15px; /* Larger padding for the marquee text */
+  font-size: 20px; /* Larger font size for the scrolling text */
+  color: #333;
+  position: absolute;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+input[type="text"] {
+  padding: 15px; /* Larger padding for text input */
+  font-size: 18px; /* Larger font size for text input */
+  border: 1px solid #ddd;
+  border-radius: 6px; /* Larger border radius for text input */
+  width: calc(100% - 150px); /* Adjusted width to fit larger padding */
+}
+
+.task-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Increased margin between input and button */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Increased margin between list items */
+  padding: 15px; /* Larger padding for list items */
+  border-radius: 6px; /* Larger border radius for list items */
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Larger shadow for list items */
+}
+
+ul li label {
+  flex: 1;
+  margin-left: 15px; /* Increased margin between checkbox and label */
+}
+
+iframe {
+  border-radius: 10px; /* Larger border radius for iframes */
+}
+
+.button-container {
+  display: flex;
+  gap: 15px; /* Increased gap between buttons */
+  justify-content: center;
+}

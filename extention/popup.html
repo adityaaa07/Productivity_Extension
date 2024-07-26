@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Productivity Dashboard</h1>
+  </header>
+
+  <main>
+    <section id="announcements">
+      <h2>Announcements</h2>
+      <div class="marquee-container">
+        <div class="marquee">Welcome to the localcat !!! Stay productive and enjoy some music while you work.</div>
+      </div>
+    </section>
+
+    <section id="google-slide">
+      <h2>Google Slide</h2>
+      <iframe src="https://docs.google.com/presentation/d/e/YOUR_GOOGLE_SLIDE_ID/embed?start=false&loop=false&delayms=3000" 
+              frameborder="0" width="100%" height="400" allowfullscreen></iframe>
+    </section>
+
+    <section id="pomodoro-timer">
+      <h2>Pomodoro Timer</h2>
+      <div id="timer">
+        <span id="minutes">25</span>:<span id="seconds">00</span>
+      </div>
+      <div class="button-container">
+        <button id="start-timer">Start</button>
+        <button id="reset-timer">Reset</button>
+      </div>
+    </section>
+
+    <section id="spotify">
+      <h2>Spotify</h2>
+      <iframe src="https://open.spotify.com/embed/playlist/YOUR_SPOTIFY_PLAYLIST_ID" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </section>
+
+    <section id="dgc">
+      <h2>Daily Growth Checklist (DGC)</h2>
+      <div class="task-container">
+        <input type="text" id="new-task" placeholder="Add a new task">
+        <button id="add-task">Add Task</button>
+      </div>
+      <ul id="dgc-list"></ul>
+      <button id="reset-dgc">Reset Checklist</button>
+    </section>
+
+    <section id="calendar">
+      <h2>Google Calendar Day View</h2>
+      <iframe src="https://calendar.google.com/calendar/embed?mode=DAY&src=YOUR_CALENDAR_ID" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </section>
+
+    <section id="links">
+      <h2>Useful Links</h2>
+      <div class="button-container">
+        <button id="google-meet-button">Google Meet</button>
+        <button id="google-keep-button">Google Keep</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
